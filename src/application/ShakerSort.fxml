@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ShakerSort">
+   <children>
+      <HBox fx:id="hbox" layoutX="84.0" layoutY="336.0" prefHeight="50.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="textField0" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+            <TextField fx:id="textField1" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+            <TextField fx:id="textField2" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+            <TextField fx:id="textField3" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+            <TextField fx:id="textField4" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+            <TextField fx:id="textField5" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+            <TextField fx:id="textField6" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+            <TextField fx:id="textField7" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+            <TextField fx:id="textField8" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+            <TextField fx:id="textField9" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+            <TextField fx:id="textField10" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+            <TextField fx:id="textField11" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+         </children>
+      </HBox>
+      <Button layoutX="358.0" layoutY="445.0" mnemonicParsing="false" onAction="#handleSwap" text="Start" />
+      <Label layoutX="40.0" layoutY="20.0" text="Shaker Sort">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

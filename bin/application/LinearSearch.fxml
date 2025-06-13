@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LinearSearch">
+   <children>
+      <HBox fx:id="hbox" layoutX="84.0" layoutY="336.0" prefHeight="50.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="textField0" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+            <TextField fx:id="textField1" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+            <TextField fx:id="textField2" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+            <TextField fx:id="textField3" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+            <TextField fx:id="textField4" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+            <TextField fx:id="textField5" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+            <TextField fx:id="textField6" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+            <TextField fx:id="textField7" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+            <TextField fx:id="textField8" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+            <TextField fx:id="textField9" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+            <TextField fx:id="textField10" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+            <TextField fx:id="textField11" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+         </children>
+      </HBox>
+      <Button fx:id="startButton" layoutX="358.0" layoutY="445.0" mnemonicParsing="false" onAction="#handleSearch" text="Start" />
+      <TextField fx:id="textFieldSearch" alignment="CENTER" layoutX="673.0" layoutY="12.0" prefHeight="50.0" prefWidth="50.0" />
+      <Label layoutX="422.0" layoutY="27.0" text="Nhập giá trị cần tìm:  ">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="result" alignment="TOP_LEFT" layoutX="422.0" layoutY="75.0" prefHeight="136.0" prefWidth="276.0" text="Kết quả :" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="20.0" text="Linear Search">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

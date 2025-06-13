@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RadixSort">
+   <children>
+      <!-- TextField 0 -> 11: Những TextField chính với kích thước 50x50 -->
+      <HBox layoutX="50.0" layoutY="14.0" prefHeight="50.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="textfield0" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+            <TextField fx:id="textfield1" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+            <TextField fx:id="textfield2" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+            <TextField fx:id="textfield3" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+            <TextField fx:id="textfield4" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+            <TextField fx:id="textfield5" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+            <TextField fx:id="textfield6" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+            <TextField fx:id="textfield7" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+            <TextField fx:id="textfield8" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+            <TextField fx:id="textfield9" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+            <TextField fx:id="textfield10" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+            <TextField fx:id="textfield11" alignment="CENTER" prefHeight="50.0" prefWidth="50.0" />
+         </children>
+      </HBox>
+
+      <!-- TextField 00 -> 912: Những TextField trong mảng 2 chiều -->
+      <VBox layoutX="32.0" layoutY="74.0" prefHeight="304.0" prefWidth="544.0">
+         <children>
+            <!-- Row 0 -->
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="50.0">
+               <children>
+                  <TextField fx:id="textField012" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" text="0" />
+                  <TextField fx:id="textField00" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField01" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField02" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField03" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField04" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField05" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField06" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField07" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField08" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField09" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField010" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField011" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+               </children>
+            </HBox>
+            
+            <!-- Row 1 -->
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="50.0">
+               <children>
+                  <TextField fx:id="textField112" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" text="1" />
+                  <TextField fx:id="textField10" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField11" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField12" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField13" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField14" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField15" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField16" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField17" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField18" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField19" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField110" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField111" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+               </children>
+            </HBox>
+            
+            <!-- Row 2 -->
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="50.0">
+               <children>
+                  <TextField fx:id="textField212" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" text="2" />
+                  <TextField fx:id="textField20" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField21" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField22" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField23" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField24" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField25" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField26" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField27" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField28" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField29" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField210" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField211" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+               </children>
+            </HBox>
+
+            <!-- Row 3 -->
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="50.0">
+               <children>
+                  <TextField fx:id="textField312" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" text="3" />
+                  <TextField fx:id="textField30" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField31" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField32" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField33" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField34" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField35" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField36" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField37" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField38" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField39" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField310" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField311" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+               </children>
+            </HBox>
+
+            <!-- Row 4 -->
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="50.0">
+               <children>
+                  <TextField fx:id="textField412" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" text="4" />
+                  <TextField fx:id="textField40" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField41" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField42" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField43" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField44" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField45" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField46" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField47" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField48" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField49" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField410" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField411" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+               </children>
+            </HBox>
+
+            <!-- Row 5 -->
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="50.0">
+               <children>
+                  <TextField fx:id="textField512" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" text="5" />
+                  <TextField fx:id="textField50" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField51" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField52" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField53" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField54" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField55" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField56" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField57" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField58" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField59" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField510" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField511" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+               </children>
+            </HBox>
+
+            <!-- Row 6 -->
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="50.0">
+               <children>
+                  <TextField fx:id="textField612" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" text="6" />
+                  <TextField fx:id="textField60" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField61" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField62" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField63" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField64" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField65" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField66" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField67" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField68" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField69" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField610" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField611" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+               </children>
+            </HBox>
+
+            <!-- Row 7 -->
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="50.0">
+               <children>
+                  <TextField fx:id="textField712" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" text="7" />
+                  <TextField fx:id="textField70" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField71" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField72" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField73" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField74" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField75" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField76" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField77" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField78" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField79" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField710" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField711" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+               </children>
+            </HBox>
+
+            <!-- Row 8 -->
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="50.0">
+               <children>
+                  <TextField fx:id="textField812" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" text="8" />
+                  <TextField fx:id="textField80" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField81" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField82" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField83" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField84" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField85" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField86" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField87" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField88" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField89" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField810" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField811" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+               </children>
+            </HBox>
+
+            <!-- Row 9 -->
+            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="50.0">
+               <children>
+                  <TextField fx:id="textField912" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" text="9" />
+                  <TextField fx:id="textField90" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField91" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField92" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField93" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField94" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField95" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField96" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField97" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField98" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField99" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField910" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+                  <TextField fx:id="textField911" alignment="CENTER" prefHeight="35.0" prefWidth="50.0" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+
+      <!-- Nút Start và tiêu đề Radix Sort -->
+      <Label layoutX="582.0" layoutY="80.0" text="Radix Sort">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Button layoutX="613.0" layoutY="284.0" mnemonicParsing="false" onAction="#handleSort" text="Start" />
+   </children>
+</AnchorPane>

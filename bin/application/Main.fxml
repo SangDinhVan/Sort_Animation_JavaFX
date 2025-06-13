@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="697.0" prefWidth="1002.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Pane fx:id="contentPane1" layoutX="587.0" layoutY="14.0" prefHeight="164.0" prefWidth="370.0" style="-fx-border-color: black;">
+         <children>
+            <TextField fx:id="inputArray" layoutX="22.0" layoutY="66.0" prefHeight="33.0" prefWidth="320.0" />
+            <Button fx:id="confirmInput" layoutX="13.0" layoutY="119.0" mnemonicParsing="false" onAction="#confirmInputOnly" prefHeight="25.0" prefWidth="100.0" text="Confirm">
+               <font>
+                  <Font size="15.0" />
+               </font></Button>
+            <Label layoutX="22.0" layoutY="14.0" prefHeight="51.0" prefWidth="337.0" text="Nhập các giá trị của mảng:">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Button layoutX="135.0" layoutY="119.0" mnemonicParsing="false" onAction="#resetInputField" prefHeight="25.0" prefWidth="100.0" text="Reset">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="256.0" layoutY="119.0" mnemonicParsing="false" onAction="#generateRandomNumbers" prefHeight="25.0" prefWidth="100.0" text="Random">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane fx:id="contentPane" layoutX="206.0" layoutY="195.0" prefHeight="490.0" prefWidth="750.0" style="-fx-border-color: black;" />
+      <VBox fx:id="vbox" alignment="CENTER" layoutX="14.0" layoutY="195.0" prefHeight="406.0" prefWidth="179.0" spacing="5.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="810.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#showLinearSearch" prefHeight="26.0" prefWidth="150.0" text="Linear Search" />
+            <Button mnemonicParsing="false" onAction="#showBinarySearch" prefHeight="26.0" prefWidth="150.0" text="Binary Search" />
+            <Button minHeight="21.0" mnemonicParsing="false" onAction="#showInterchangeSort" prefHeight="26.0" prefWidth="150.0" text="Interchange Sort" />
+            <Button mnemonicParsing="false" onAction="#showBubbleSort" prefHeight="26.0" prefWidth="150.0" text="Bubble Sort" />
+            <Button mnemonicParsing="false" onAction="#showInsertionSort" prefHeight="26.0" prefWidth="150.0" text="Insertion Sort  " />
+            <Button mnemonicParsing="false" onAction="#showSelectionSort" prefHeight="26.0" prefWidth="150.0" text="Selection Sort" />
+            <Button mnemonicParsing="false" onAction="#showShakerSort" prefHeight="26.0" prefWidth="150.0" text="Shaker Sort" />
+            <Button mnemonicParsing="false" onAction="#showShellSort" prefHeight="26.0" prefWidth="150.0" text="Shell Sort" />
+            <Button mnemonicParsing="false" onAction="#showBinaryInsertionSort" prefHeight="26.0" prefWidth="150.0" text="Binary Insertion Sort" />
+            <Button mnemonicParsing="false" onAction="#showMergeSort" prefHeight="26.0" prefWidth="150.0" text="Merge Sort" />
+            <Button mnemonicParsing="false" onAction="#showHeapSort" prefHeight="26.0" prefWidth="150.0" text="HeapSort" />
+            <Button mnemonicParsing="false" onAction="#showQuickSort" prefHeight="26.0" prefWidth="150.0" text="Quick Sort" />
+            <Button mnemonicParsing="false" onAction="#showRadixSort" prefHeight="26.0" prefWidth="150.0" text="Radix Sort" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="5.0" top="5.0" />
+         </padding>
+      </VBox>
+      <Pane fx:id="contentPane11" layoutX="15.0" layoutY="14.0" prefHeight="164.0" prefWidth="548.0" style="-fx-border-color: black;">
+         <children>
+            <Label fx:id="algorithmDescription" alignment="TOP_LEFT" layoutX="18.0" layoutY="14.0" prefHeight="150.0" prefWidth="515.0" text="Mô tả thuật toán :" textAlignment="JUSTIFY" wrapText="true">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

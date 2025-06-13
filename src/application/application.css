@@ -1,0 +1,77 @@
+/* --- Root AnchorPane styles --- */
+#mainPane {
+    -fx-background-color: #E0F7FA; /* Nền xanh dương nhạt */
+    -fx-padding: 20;
+}
+
+/* --- Content Pane styles --- */
+#contentPane1, #contentPane11 {
+    -fx-background-color: #FFFFFF; /* Nền trắng để nổi bật trên nền xanh nhạt */
+    -fx-border-color: #81D4FA;     /* Viền xanh dương pastel */
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-padding: 10;
+}
+
+/* --- Specific TextField styles --- */
+#inputArray {
+    /* Giữ nguyên phong cách đã định nghĩa trước cho #inputArray */
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #0277BD;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 5 10;
+}
+#inputArray:focused {
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+}
+
+.text-field {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #0277BD;            /* Màu xanh dương đậm */
+    -fx-border-color: black;           /* Viền màu đen */
+    -fx-border-width: 1px;             /* Độ dày viền */
+    -fx-border-radius: 5px;            /* Bo góc nhẹ cho viền */
+    -fx-background-radius: 5px;        /* Bo góc cho nền */
+    -fx-padding: 5 10;
+}
+.text-field:focused {
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+}
+
+/* --- Button styles --- */
+.button {
+    -fx-background-color: #4FC3F7; /* Màu xanh dương pastel */
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-border-color: #81D4FA;     /* Viền xanh dương nhạt */
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.1), 3, 0, 0, 1);
+}
+
+/* --- VBox styles --- */
+#vbox {
+    -fx-spacing: 10;
+    -fx-padding: 10;
+    -fx-background-color: #E1F5FE; /* Màu xanh dương rất nhạt */
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+/* --- Label styles --- */
+.label {
+    -fx-text-fill: #01579B;        /* Màu xanh dương đậm để chữ nổi bật */
+    -fx-font-weight: bold;
+    -fx-font-size: 25px;
+}
+#algorithmDescription {
+    -fx-text-fill: #0277BD;        /* Màu xanh dương trung bình */
+    -fx-font-size: 16px;
+    -fx-font-style: italic;
+}
