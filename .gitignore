@@ -1,0 +1,14 @@
+# Ignore compiled files and folders
+/bin/
+*.class
+
+# Ignore IDE settings
+.classpath
+.project
+
+# MacOS / Windows metadata files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
